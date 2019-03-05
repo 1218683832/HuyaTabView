@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mrrun.huyatabview.view.HuyaTabView
+        android:id="@+id/huyatabview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:items_xml="@xml/xml_huyatabview_items"
+        app:fixedItem="3"
+        android:layout_marginTop="20dp">
+    </com.mrrun.huyatabview.view.HuyaTabView>
+
+    <com.mrrun.huyatabview.view.HuyaTabView
+        android:id="@+id/huyatabview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/huyatabview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:items_xml="@xml/xml_huyatabview_items"
+        app:fixedItem="3"
+        android:layout_marginTop="20dp">
+    </com.mrrun.huyatabview.view.HuyaTabView>
+
+</android.support.constraint.ConstraintLayout>
